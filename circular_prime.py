@@ -7,10 +7,10 @@ def prime(n):
     else:
         return True
 n=input()
-r=int(n)
-s=int(n[::-1])
-if prime(r):
-    if prime(s):
+s=int(n)
+r=int(n[::-1])
+if prime(s):
+    if prime(r):
         print('circular prime')
     else:
         print('prime but not a circular prime')
